@@ -1,9 +1,9 @@
 #!/bin/sh
 
 apt-get update
-apt-get install python3-gpiozero
-apt-get install python3-flask
-apt-get install python3-w1thermsensor
+apt-get -y install python3-gpiozero
+apt-get -y install python3-flask
+apt-get -y install python3-w1thermsensor
 
 grep -q "^dtoverlay=w1-gpio" /boot/config.txt
 
